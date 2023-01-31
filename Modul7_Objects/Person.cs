@@ -14,7 +14,7 @@ namespace Modul7_Objects
         public void printPersonInformation()
         {
             Console.WriteLine("Navn: {0}", navn);
-            Console.WriteLine("EMail: {0}", eMail);
+            Console.WriteLine("E-Mail: {0}", eMail);
         }
     }
 }

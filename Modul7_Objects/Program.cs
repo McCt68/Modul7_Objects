@@ -101,16 +101,18 @@ namespace Modul7_Objects
             }
 
             // Øvelse 4
-            static void ExersizeFour() {
+            static void ExersizeFour()
+            {
                 Console.Clear();
                 Console.WriteLine("Øvelse 4");
 
-                Matematik trækFra = new Matematik("455");               
-                Console.WriteLine(trækFra.TrækFra(25, 10).ToString()); 
+                Matematik trækFra = new Matematik("455");
+                Console.WriteLine(trækFra.TrækFra(25, 10).ToString());
             }
 
             // Øvelse 5
-            static void ExersizeFive() {
+            static void ExersizeFive()
+            {
                 Console.Clear();
                 Console.WriteLine("Øvelse 5");
 
@@ -120,7 +122,8 @@ namespace Modul7_Objects
             }
 
             // Øvelse 6
-            static void ExersizeSix() {
+            static void ExersizeSix()
+            {
                 Console.Clear();
                 Console.WriteLine("Øvelse 6");
 
@@ -130,11 +133,36 @@ namespace Modul7_Objects
                 øvelse6.eMail = "Michael@yousee.com";
 
                 øvelse6.printPersonInformation();
-                
+
             }
 
             // Øvelse 7
-            static void ExersizeSeven() { }
+            static void ExersizeSeven()
+            {
+                Console.Clear();
+                Console.WriteLine("Øvelse 7");
+
+                Vare indkøbtTing1 = new Vare();
+                indkøbtTing1.vare = "Shampoo";
+                indkøbtTing1.pris = 12.00;
+                indkøbtTing1.Udskriv();
+
+                Vare indkøbtTing2 = new Vare();
+                indkøbtTing2.vare = "Toiletpapir";
+                indkøbtTing2.pris = 14.50;
+
+                Vare indkøbtTing3 = new ();
+                indkøbtTing3.vare = "Smør";
+                indkøbtTing3.pris = 22.95;
+
+                KasseApperat samletBon = new KasseApperat();
+                Vare[] samletIndkøb = new Vare[] {indkøbtTing1, indkøbtTing2, indkøbtTing3};
+               
+                samletBon.UdskrivBon(samletIndkøb);
+
+                // ved brug af methoden fra base class
+                samletBon.UdskrivBonMedMethode(samletIndkøb);
+            }
 
             // Øvelse 8
             static void ExersizeEight() { }
