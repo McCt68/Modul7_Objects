@@ -83,14 +83,16 @@
 
             }
 
-            // Øvelse 5.1
+            // Øvelse 2
             static void ExersizeTwo()
             {
                 Console.WriteLine("Øvelse 2");
             }
 
-            // Øvelse 5.1
-            static void ExersizeTree() { }
+            // Øvelse 3
+            static void ExersizeTree() {
+                Console.WriteLine("Øvelse 3");
+            }
 
             // Øvelse 5.1
             static void ExersizeFour() { }
