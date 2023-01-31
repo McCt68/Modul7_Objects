@@ -1,117 +1,119 @@
 ﻿namespace Modul7_Objects
 {
-    
-        internal class Program
+
+    internal class Program
+    {
+        static void Main(string[] args)
         {
-            static void Main(string[] args)
+            // User menu
+            // Console.WriteLine("\nVælg den øvelse du vil se. 1 - 10");
+
+            bool stayInLoop = true;
+
+
+            while (stayInLoop)
             {
-                // User menu
-                // Console.WriteLine("\nVælg den øvelse du vil se. 1 - 10");
-
-                bool stayInLoop = true;
+                Console.WriteLine("\nVælg den øvelse du vil se. 1 - 10, eller Nul hvis du vil afslutte programmet");
 
 
-                while (stayInLoop)
+                string exersizeNumber = Console.ReadLine();
+
+                switch (exersizeNumber)
                 {
-                    Console.WriteLine("\nVælg den øvelse du vil se. 1 - 10, eller Nul hvis du vil afslutte programmet");
+                    case "1":
+                        ExersizeOne();
+                        break;
 
+                    case "2":
+                        ExersizeTwo();
+                        break;
 
-                    string exersizeNumber = Console.ReadLine();
+                    case "3":
+                        ExersizeTree();
+                        break;
 
-                    switch (exersizeNumber)
-                    {
-                        case "1":
-                            ExersizeOne();
-                            break;
+                    case "4":
+                        ExersizeFour();
+                        break;
 
-                        case "2":
-                            ExersizeTwo();
-                            break;
+                    case "5":
+                        ExersizeFive();
+                        break;
 
-                        case "3":
-                            ExersizeTree();
-                            break;
+                    case "6":
+                        ExersizeSix();
+                        break;
 
-                        case "4":
-                            ExersizeFour();
-                            break;
+                    case "7":
+                        ExersizeSeven();
+                        break;
 
-                        case "5":
-                            ExersizeFive();
-                            break;
+                    case "8":
+                        ExersizeEight();
+                        break;
 
-                        case "6":
-                            ExersizeSix();
-                            break;
+                    case "9":
+                        ExersizeNine();
+                        break;
 
-                        case "7":
-                            ExersizeSeven();
-                            break;
+                    case "10":
+                        ExersizeTen();
+                        break;
 
-                        case "8":
-                            ExersizeEight();
-                            break;
+                    case "0":
+                        Console.WriteLine("Programmet afsluttes. Tak for denne gang");
+                        stayInLoop = false;
+                        break;
 
-                        case "9":
-                            ExersizeNine();
-                            break;
+                    default:
+                        Console.WriteLine("Ugyldigt valg. Prøv venligst igen.");
+                        break;
 
-                        case "10":
-                            ExersizeTen();
-                            break;
-
-                        case "0":
-                            Console.WriteLine("Programmet afsluttes. Tak for denne gang");
-                            stayInLoop = false;
-                            break;
-
-                        default:
-                            Console.WriteLine("Ugyldigt valg. Prøv venligst igen.");
-                            break;
-
-
-                    }
 
                 }
 
-                // Øvelse 5.1
-                static void ExersizeOne()
-                {
-                    Console.WriteLine("Øvelse 1\n");
-                    
-                }
+            }
 
-                // Øvelse 5.1
-                static void ExersizeTwo()
-                {
-                    Console.WriteLine("Øvelse 2");
-                }
+            // Øvelse 5.1
+            static void ExersizeOne()
+            {
+                Console.WriteLine("Øvelse 1\n");
+                ClassSevenOne hejVerden = new ClassSevenOne();
+                hejVerden.SigHej();
 
-                // Øvelse 5.1
-                static void ExersizeTree() { }
+            }
 
-                // Øvelse 5.1
-                static void ExersizeFour() { }
+            // Øvelse 5.1
+            static void ExersizeTwo()
+            {
+                Console.WriteLine("Øvelse 2");
+            }
 
-                // Øvelse 5.1
-                static void ExersizeFive() { }
+            // Øvelse 5.1
+            static void ExersizeTree() { }
 
-                // Øvelse 5.1
-                static void ExersizeSix() { }
+            // Øvelse 5.1
+            static void ExersizeFour() { }
 
-                // Øvelse 5.1
-                static void ExersizeSeven() { }
+            // Øvelse 5.1
+            static void ExersizeFive() { }
 
-                // Øvelse 5.1
-                static void ExersizeEight() { }
+            // Øvelse 5.1
+            static void ExersizeSix() { }
 
-                // Øvelse 5.1
-                static void ExersizeNine() { }
+            // Øvelse 5.1
+            static void ExersizeSeven() { }
 
-                // Øvelse 5.1
-                static void ExersizeTen() { }
+            // Øvelse 5.1
+            static void ExersizeEight() { }
 
-            
+            // Øvelse 5.1
+            static void ExersizeNine() { }
+
+            // Øvelse 5.1
+            static void ExersizeTen() { }
+
+
         }
     }
 }
