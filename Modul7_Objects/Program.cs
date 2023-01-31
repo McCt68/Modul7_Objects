@@ -1,4 +1,6 @@
-﻿namespace Modul7_Objects
+﻿using System.Diagnostics;
+
+namespace Modul7_Objects
 {
 
     internal class Program
@@ -74,7 +76,7 @@
 
             }
 
-            // Øvelse 5.1
+            // Øvelse 1
             static void ExersizeOne()
             {
                 Console.WriteLine("Øvelse 1\n");
@@ -87,32 +89,49 @@
             static void ExersizeTwo()
             {
                 Console.WriteLine("Øvelse 2");
+                Matematik Tal = new Matematik("24");
             }
 
             // Øvelse 3
-            static void ExersizeTree() {
+            static void ExersizeTree()
+            {
                 Console.WriteLine("Øvelse 3");
+                Matematik lagtSammen = new Matematik("48");
+                lagtSammen.LægSammen(51, 5);
             }
 
-            // Øvelse 5.1
-            static void ExersizeFour() { }
+            // Øvelse 4
+            static void ExersizeFour() {
+                Console.Clear();
+                Console.WriteLine("Øvelse 4");
 
-            // Øvelse 5.1
-            static void ExersizeFive() { }
+                Matematik trækFra = new Matematik("455");               
+                Console.WriteLine(trækFra.TrækFra(25, 10).ToString()); 
+            }
 
-            // Øvelse 5.1
+            // Øvelse 5
+            static void ExersizeFive() {
+                Console.Clear();
+                Console.WriteLine("Øvelse 5");
+
+                Matematik ØvelseFem = new Matematik("12455");
+                ØvelseFem.PlusTotal(55);
+                ØvelseFem.Sum();
+            }
+
+            // Øvelse 6
             static void ExersizeSix() { }
 
-            // Øvelse 5.1
+            // Øvelse 7
             static void ExersizeSeven() { }
 
-            // Øvelse 5.1
+            // Øvelse 8
             static void ExersizeEight() { }
 
-            // Øvelse 5.1
+            // Øvelse 9
             static void ExersizeNine() { }
 
-            // Øvelse 5.1
+            // Øvelse 10
             static void ExersizeTen() { }
 
 
