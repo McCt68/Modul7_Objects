@@ -120,7 +120,18 @@ namespace Modul7_Objects
             }
 
             // Øvelse 6
-            static void ExersizeSix() { }
+            static void ExersizeSix() {
+                Console.Clear();
+                Console.WriteLine("Øvelse 6");
+
+                Person øvelse6 = new Person();
+
+                øvelse6.navn = "Michael";
+                øvelse6.eMail = "Michael@yousee.com";
+
+                øvelse6.printPersonInformation();
+                
+            }
 
             // Øvelse 7
             static void ExersizeSeven() { }
