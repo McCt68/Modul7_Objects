@@ -151,7 +151,7 @@ namespace Modul7_Objects
                 indkøbtTing2.vare = "Toiletpapir";
                 indkøbtTing2.pris = 14.50;
 
-                Vare indkøbtTing3 = new ();
+                Vare indkøbtTing3 = new (); // behøver ikke angive class
                 indkøbtTing3.vare = "Smør";
                 indkøbtTing3.pris = 22.95;
 
@@ -165,13 +165,33 @@ namespace Modul7_Objects
             }
 
             // Øvelse 8
-            static void ExersizeEight() { }
+            static void ExersizeEight() {
+                Console.Clear();
+                Console.WriteLine("Øvelse 8");
+
+                LysRegulering hillerødGade01= new LysRegulering();
+            }
 
             // Øvelse 9
-            static void ExersizeNine() { }
+            static void ExersizeNine() {
+                Console.Clear();
+                Console.WriteLine("Øvelse 9");
+
+                // using constructor 1
+                By albertslund = new By("Albertslund");
+
+                // using constructor 2
+                By tåstrup = new By("Tåstrup", 48000);
+            }
 
             // Øvelse 10
-            static void ExersizeTen() { }
+            static void ExersizeTen() {
+                Console.Clear();
+                Console.WriteLine("Øvelse 10");
+
+                string tekst = "Hej verden";
+                Console.WriteLine(tekst.Contains("hej"));
+            }
 
 
         }
